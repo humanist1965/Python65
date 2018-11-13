@@ -6,6 +6,7 @@ Provides features to store JSON/YAML objects in local file system based database
 import json
 import sys, os
 import pathlib
+import shutil
 
 class FileDB:
     def __init__(self, dbROOT=None):
@@ -48,8 +49,8 @@ class FileDB:
 
     def clearDB(self):
         path = self._getDefaultRoot()
-        print("About to purge DB: {0}".format(path))
-        # shutil.rmtree(path)
+        # print("About to purge DB: {0}".format(path))
+        shutil.rmtree(path)
 
     def _getDefaultRoot(self):
 
