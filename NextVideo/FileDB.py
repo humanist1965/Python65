@@ -7,6 +7,7 @@ import json
 import sys, os
 import pathlib
 import shutil
+import yaml 
 
 class FileDB:
     def __init__(self, dbROOT=None):
@@ -32,11 +33,12 @@ class FileDB:
         with open(path + 'data.json', 'w') as fp:
             fp.write(jsonStr)
 
-    def _optSep(self, relPath):
+    def _optSep(self, relPath, addToEnd = True):
         if relPath[0] != "/":
             relPath = "/" + relPath
-        if relPath[len(relPath)-1] != "/":
-            relPath = relPath + "/"
+        if addToEnd == True:
+            if relPath[len(relPath)-1] != "/":
+                relPath = relPath + "/"
         return relPath
 
     def _createPathIfNeeded(self, path):
@@ -46,6 +48,17 @@ class FileDB:
         path = self._getDefaultRoot() + self._optSep(relPath)
         with open(path + 'data.json', 'r') as fp:
             return fp.read()
+
+    def getYAML(self, relFilePath):
+        path = self._getYAMLRoot() + self._optSep(relFilePath, False)
+        with open(path, 'r') as fp:
+            try:
+                dictRet = yaml.load(fp)
+                print(dictRet)
+                return dictRet
+            except yaml.YAMLError as exc:
+                print(exc)
+
 
     def clearDB(self):
         path = self._getDefaultRoot()
@@ -66,9 +79,25 @@ class FileDB:
             
             return pathname 
 
+    def _getYAMLRoot(self):
+        if self._rootYAMLExists():
+            return self.yamlROOT
+        else:
+            dbRoot = self._optSep(self._getDefaultRoot())
+            yamlRoot = dbRoot + "../YAML_FILES"
+            self.yamlROOT = yamlRoot
+            return yamlRoot
+
     def _rootDBExists(self):
         try:
             self.dbROOT
+            return True
+        except:
+            return False
+
+    def _rootYAMLExists(self):
+        try:
+            self.yamlROOT
             return True
         except:
             return False
@@ -76,6 +105,8 @@ class FileDB:
 
     def DEBUG(self):
         print("self.dbROOT = {0}".format(self.dbROOT))
+
+   
 
 
 
@@ -88,6 +119,8 @@ def main():
     dbObj.DEBUG()
     json1 = dbObj.getJSON("/mark/sharon/andrew/ellie/John")
     print("getJSON returned: {0} ".format(json1))
+    yamlStr = dbObj.getYAML("test1.yml")
+    print("getYAML returned: {0} ".format(yamlStr))
 
 if __name__ == '__main__':
     print("Running Main")
