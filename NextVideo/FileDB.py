@@ -59,6 +59,11 @@ class FileDB:
             except yaml.YAMLError as exc:
                 print(exc)
 
+    def convertToJSON(self, obj):
+        jsonStr = json.dumps(obj)
+        return jsonStr
+
+
 
     def clearDB(self):
         path = self._getDefaultRoot()
@@ -119,8 +124,9 @@ def main():
     dbObj.DEBUG()
     json1 = dbObj.getJSON("/mark/sharon/andrew/ellie/John")
     print("getJSON returned: {0} ".format(json1))
-    yamlStr = dbObj.getYAML("test1.yml")
-    print("getYAML returned: {0} ".format(yamlStr))
+    yamlObj = dbObj.getYAML("GOT1.yml")
+    jsonStr = dbObj.convertToJSON(yamlObj)
+    print("getYAML returned: {0} ".format(jsonStr))
 
 if __name__ == '__main__':
     print("Running Main")
