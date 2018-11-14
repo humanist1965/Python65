@@ -64,9 +64,13 @@ class NextVideo:
         self.incEpisodeNum(seriesID,incNum=-1)
 
     def incSeasonNum(self, seriesID):
+        # increment by a big number to force a season update
+        #self.incEpisodeNum(seriesID,incNum=100)
         pass
 
     def decSeasonNum(self, seriesID):
+        # decrement by a big number to force a season update
+        #self.incEpisodeNum(seriesID,incNum=-100)
         pass
 
     # Private implementation methods   
