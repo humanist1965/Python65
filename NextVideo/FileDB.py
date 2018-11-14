@@ -5,9 +5,10 @@ Provides features to store JSON/YAML objects in local file system based database
 '''
 import json
 import sys, os
+import os.path
 import pathlib
 import shutil
-import yaml 
+import yaml  
 
 class FileDB:
     def __init__(self, dbROOT=None):
@@ -44,20 +45,40 @@ class FileDB:
     def _createPathIfNeeded(self, path):
         pathlib.Path(path).mkdir(parents=True, exist_ok=True) 
 
+    def getSubKeys(self, relPath):
+        path = self._getDefaultRoot() + self._optSep(relPath)
+        onlyfiles = [os.path.join(relPath, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) == False ]
+
+        return onlyfiles
+
     def getJSON(self, relPath):
         path = self._getDefaultRoot() + self._optSep(relPath)
-        with open(path + 'data.json', 'r') as fp:
-            return fp.read()
+        try:
+            with open(path + 'data.json', 'r') as fp:
+                return fp.read()
+        except:
+            return ""
+    
+    def getObj(self, relPath):
+        jsonStr = self.getJSON(relPath)
+        dictRet = yaml.load(jsonStr)
+        return dictRet
 
     def getYAML(self, relFilePath):
+        relFilePath = self._addYamlExtIfNeeded(relFilePath)
         path = self._getYAMLRoot() + self._optSep(relFilePath, False)
         with open(path, 'r') as fp:
             try:
                 dictRet = yaml.load(fp)
-                print(dictRet)
                 return dictRet
             except yaml.YAMLError as exc:
                 print(exc)
+
+    def _addYamlExtIfNeeded(self,relFilePath):
+        endStr = relFilePath[-4:]
+        if endStr != ".yml": 
+            relFilePath = relFilePath + ".yml"
+        return relFilePath
 
     def convertToJSON(self, obj):
         jsonStr = json.dumps(obj)
@@ -86,6 +107,7 @@ class FileDB:
 
     def _getYAMLRoot(self):
         if self._rootYAMLExists():
+             # pylint: disable=E0203
             return self.yamlROOT
         else:
             dbRoot = self._optSep(self._getDefaultRoot())
@@ -124,7 +146,7 @@ def main():
     dbObj.DEBUG()
     json1 = dbObj.getJSON("/mark/sharon/andrew/ellie/John")
     print("getJSON returned: {0} ".format(json1))
-    yamlObj = dbObj.getYAML("GOT1.yml")
+    yamlObj = dbObj.getYAML("GOT3.yml")
     jsonStr = dbObj.convertToJSON(yamlObj)
     print("getYAML returned: {0} ".format(jsonStr))
 
