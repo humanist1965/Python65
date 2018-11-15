@@ -1,0 +1,69 @@
+.topright {
+    position:fixed;
+    width:100px;
+    height:100px;
+    background:red;
+    right:10px;
+    top:10px;
+    z-index: -1;
+}
+
+.JumpBotton {
+    background-color: yellow;
+}
+body {
+    counter-reset: testCount;
+}
+
+.test {
+    background-color: cyan;
+
+}
+
+.test::before {              
+    content: "[" counter(testCount) "]"; 
+    counter-increment: testCount; 
+    font-weight: bold;
+}
+
+.topLeft, .topRight, .bottomLeft, .bottomRight  {
+    background-color: blue;
+    width:100px;
+    height:100px;
+}
+
+.topLeft {
+    position:fixed;
+    left:10px;
+    top:10px;
+
+} 
+.topRight {
+    position:fixed;
+    right:10px;
+    top:10px;
+
+} 
+.bottomLeft {
+    position:fixed;
+    left:10px;
+    bottom:10px;
+} 
+.bottomRight  {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+}
+
+.centerIt {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
