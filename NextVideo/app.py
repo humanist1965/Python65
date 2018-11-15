@@ -1,5 +1,6 @@
 from NextVideo import NextVideo
 from flask import Flask
+from flask import render_template
 import json
 app = Flask(__name__)
 
@@ -8,8 +9,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def help():
-    return "<h1>NextVideo API</h1>2222"
-
+    return render_template('help.html')
+   
 @app.route("/Series")
 def listAllSeries():
     nv = NextVideo("mark")
