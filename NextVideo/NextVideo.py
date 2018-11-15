@@ -172,6 +172,7 @@ def _testUserData():
     dbObj.storeJSON("mark/GOT", dict1)
     dict1 = {'seriesID': 'Billions', 'currentSeasonNumber': 1, 'nextEpisodeNumber': '1', 'lastWatchedDate':"2018-11-14"}
     dbObj.storeJSON("mark/Billions", dict1)
+
 def main():
     _testUserData()
     # pylint: disable=W0612
@@ -211,7 +212,3 @@ if __name__ == '__main__':
     print("Running Next Video Test")
     main()
             
-
-
-
-
