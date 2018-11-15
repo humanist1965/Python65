@@ -37,8 +37,10 @@ class NextVideo:
             userObj = self.getNextEpisode(seriesID)
         except:
             # No more episode this season
-            curSeasonNum = curSeasonNum + incNum
-            curEpisodeNum = self._incOrDecSeasonStart(seriesID, curSeasonNum, incNum)
+            curSeasonNum = curSeasonNum + self._incByOne(incNum)
+            if curSeasonNum < 1:
+                curSeasonNum = 1
+            curEpisodeNum = self._incOrDecSeasonStart(seriesID, curSeasonNum, self._incByOne(incNum))
             self._updateUserData(seriesID, 'currentSeasonNumber', curSeasonNum)
             self._updateUserData(seriesID, 'nextEpisodeNumber', curEpisodeNum)
             try:
@@ -51,6 +53,13 @@ class NextVideo:
                 self._updateUserData(seriesID, 'currentSeasonNumber', curSeasonNum)
                 self._updateUserData(seriesID, 'nextEpisodeNumber', curEpisodeNum)
         self._saveUserData()
+
+    @staticmethod
+    def _incByOne(incNum):
+        if incNum > 0:
+            return 1
+        else:
+            return -1
 
     def _incOrDecSeasonStart(self, seriesID, curSeasonNum, incNum):
         if incNum == 1:
@@ -65,13 +74,12 @@ class NextVideo:
 
     def incSeasonNum(self, seriesID):
         # increment by a big number to force a season update
-        #self.incEpisodeNum(seriesID,incNum=100)
-        pass
+        self.incEpisodeNum(seriesID,incNum=100)
+        
 
     def decSeasonNum(self, seriesID):
         # decrement by a big number to force a season update
-        #self.incEpisodeNum(seriesID,incNum=-100)
-        pass
+        self.incEpisodeNum(seriesID,incNum=-100)
 
     # Private implementation methods   
 
@@ -185,6 +193,16 @@ def main():
     print("Decrement Episode")
     for i in range(40):
         nv.decEpisodeNum("GOT")
+        nextEpisode = nv.getNextEpisode("GOT")
+        print(nextEpisode)
+    print("Increment Season")
+    for i in range(3):
+        nv.incSeasonNum("GOT")
+        nextEpisode = nv.getNextEpisode("GOT")
+        print(nextEpisode)
+    print("Decrement Season")
+    for i in range(5):
+        nv.decSeasonNum("GOT")
         nextEpisode = nv.getNextEpisode("GOT")
         print(nextEpisode)
 
