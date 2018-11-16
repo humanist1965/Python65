@@ -1,3 +1,12 @@
+body {
+    font-family: monospace, monospace; 
+}
+
+h1 {
+    color: #d3d3d3; 
+    text-align: center;
+}
+
 .topright {
     position:fixed;
     width:100px;
@@ -28,6 +37,7 @@ body {
 
 .topLeft, .topRight, .bottomLeft, .bottomRight  {
     background-color: blue;
+    opacity: 0.1;
     width:100px;
     height:100px;
 }
@@ -40,19 +50,35 @@ body {
 } 
 .topRight {
     position:fixed;
+    display:none; /* Turn this off */
     right:10px;
     top:10px;
 
 } 
+.bottomPage {
+    position: fixed;
+    left:10px;
+    bottom:10px;
+}
 .bottomLeft {
     position:fixed;
+    display:none; /* Turn this off */
     left:10px;
     bottom:10px;
 } 
 .bottomRight  {
     position:fixed;
+    display:none; /* Turn this off */
     right:10px;
     bottom:10px;
+}
+
+.debugConsole {
+    z-index: -100;
+    display:none; /* Turn this off */
+    position:fixed;
+    left:200px;
+    bottom:10px; 
 }
 
 .centerIt {
@@ -92,4 +118,13 @@ body {
     color: red;
     text-align:center;
     font-size: xx-small;
+}
+
+.playItCursor {
+    cursor: progress;
+}
+
+.row:last-child {
+    position: fixed;
+    bottom: 0;
 }

@@ -28,6 +28,13 @@ def getNextEpisode(seriesID):
     nv = NextVideo("mark")
     return json.dumps(nv.getNextEpisode(seriesID))
 
+@app.route("/Series/<seriesID>/Play", methods=['GET', 'POST'])
+def playEpisodeNum(seriesID):
+    nv = NextVideo("mark")
+    nv.playEpisodeNum(seriesID)
+    nv.incEpisodeNum(seriesID)
+    return json.dumps(nv.getNextEpisode(seriesID))
+
 @app.route("/Series/<seriesID>/Inc", methods=['GET', 'POST'])
 def incEpisodeNum(seriesID):
     nv = NextVideo("mark")

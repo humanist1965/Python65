@@ -1,4 +1,5 @@
 from FileDB import FileDB
+import datetime
 
 '''
 NextVideo business logic API.
@@ -26,6 +27,15 @@ class NextVideo:
         episodeData = self._getEpisodeData(seasonData, curEpisodeNum)
         userObj["url"] = episodeData["url"]
         return userObj
+
+    def playEpisodeNum(self,seriesID):
+        # Actually this will be triggered from the play event on the ui
+        # but all we are doing here is updating the lastWatchedDate field
+        # This field is important because it determined which series will appear first in the list of ones to watch.
+        
+        dtStr = datetime.datetime.today().strftime('%Y-%m-%d %H.%M.%S')
+        self._updateUserData(seriesID, 'lastWatchedDate', dtStr)
+        self._saveUserData()
 
     def incEpisodeNum(self,seriesID, incNum = 1):
         userObj = self.watchListDict[seriesID]

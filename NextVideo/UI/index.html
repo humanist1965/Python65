@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Expires" content="-1"> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -13,25 +15,35 @@
         
     </script> 
   </head>
-  <body>
+  <body id="body">
         <!-- <div id="app"> -->
-        <div class="topLeft">Top Left</div>
+        <div id="topLeft" class="topLeft"></div>
         <div class="topRight">Top Right</div>
 
-        
+        <div class="container">
+        <div class="jumbotron">
+            <h1>TVHOME.CC - NextVideo App</h1>
+        </div>
+       </div>
+
         <div class="centerIt" id="app">
             
         <div id="carouselExampleControls" class="carousel slide" xdata-ride="carousel">
               <ul class="carousel-indicators">
-                      <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                      <!-- Trying to get indicators for the complete list but can't get this working @moment
+                      So I will just have top 5 indicators -->
+                      <!-- <li v-for="(series, index) in seriesList" v-bind:class="isActive(index)" data-target="#carouselExampleControls" v-bind:data-slide-to="index">X</li> -->
+                      <li class="active" data-target="#carouselExampleControls" data-slide-to="0"></li>
                       <li data-target="#carouselExampleControls" data-slide-to="1"></li>
                       <li data-target="#carouselExampleControls" data-slide-to="2"></li>
-              </ul>
+                      <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+                    </ul>
 
               <div class="carousel-inner">
                   <div v-for="(series, index) in seriesList" v-bind:class="isActive(index)" v-on:click="PlayNextEpisode(series)">
-                    <img class="d-block w-100" src="images/image1.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img class="d-block w-100 playItCursor" src="images/image1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block playItCursor">
                             <h5>{{ series.name }}</h5>
                             <p>Next Episode - {{ series.currentSeasonNumber }}x{{ series.nextEpisodeNumber }}</p>
                             <p>Last Watched - {{ series.lastWatchedDate }} </p>
@@ -64,7 +76,21 @@
        
         </div>
 
-        <div class="bottomLeft">Bottom Left</div>
+        <div id="debugConsole" class="debugConsole">Debug Console</div>
+        <div class="bottomLeft">
+        </div>
+        
+          <div class="container" style="width:1000px;">
+              <div class="row mb-5">
+                  <div class="col-4">See Also:</div>
+                  <div class="col-4">
+                    <div><a href="http://tvhome.cc/tv/a.htm">TVHOME.CC</a></div>
+                    <div><a href="https://docs.google.com/document/d/1AwA7e9PxWqYAAS2XQE9-6QbJUuUh-chQhDEabCEj-pc/edit?usp=sharing">Add&nbsp;New&nbsp;Series</a></div>   
+                </div>       
+                  <div class="col-4"><a href="https://tinyurl.com/kersh16TV">Old&nbsp;Quick&nbsp;Links&nbsp;Page</a></div>           
+              </div>
+          </div>
+        
         <div class="bottomRight">Bottom Right</div>
       <!-- </div> -->
         <!-- Optional JavaScript -->
