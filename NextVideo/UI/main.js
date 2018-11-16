@@ -101,7 +101,7 @@ function callJSON(url, responseHandler, errorHandler) {
 }
 
 function getURL(relPath){
-  var base1 = "http://192.168.1.188:5000";
+  var base1 = "http://18.130.245.71:5000/"; //AWS Server
   var base2 = "http://127.0.0.1:5000";
   var base = base1;
   //console.log("getURL: " + base + relPath);
