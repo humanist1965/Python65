@@ -1,8 +1,10 @@
 from NextVideo import NextVideo
 from flask import Flask
 from flask import render_template
+from flask_cors import CORS
 import json
 app = Flask(__name__)
+CORS(app) # Will allow the below API to be accessed from any source
 
 # --------------------------------------------------------
 # define the webserver API routes

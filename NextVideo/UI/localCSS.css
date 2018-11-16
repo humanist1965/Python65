@@ -67,3 +67,29 @@ body {
     background-color: #f3f3f3;
 }
 
+.manualIncBar {
+    position:relative;
+    left:0px;
+    bottom:0px;
+} 
+
+.floatRight {
+    float: right;
+    z-index: 1000;
+}
+
+.floatLeft {
+    float: left;
+    z-index: 1000;
+}
+
+.incControl {
+    width: 30px;
+    height: 30px;
+}
+
+.helpText {
+    color: red;
+    text-align:center;
+    font-size: xx-small;
+}

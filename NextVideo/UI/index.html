@@ -20,10 +20,6 @@
 
         
         <div class="centerIt" id="app">
-            <h2>Vue Test</h2>
-            <ul >
-              <li v-for="detail in seriesList">{{ detail }}</li>
-            </ul>
             
         <div id="carouselExampleControls" class="carousel slide" xdata-ride="carousel">
               <ul class="carousel-indicators">
@@ -33,14 +29,19 @@
               </ul>
 
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/image1.jpg" alt="First slide">
-                  <div class="carousel-caption d-none d-md-block">
-                          <h5>header</h5>
-                          <p>some text</p>
-                        </div>
-                </div>
+                  <div v-for="(series, index) in seriesList" v-bind:class="isActive(index)" v-on:click="PlayNextEpisode(series)">
+                    <img class="d-block w-100" src="images/image1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                            <h5>{{ series.name }}</h5>
+                            <p>Next Episode - {{ series.currentSeasonNumber }}x{{ series.nextEpisodeNumber }}</p>
+                            <p>Last Watched - {{ series.lastWatchedDate }} </p>
+                    </div>
+                    
+                  </div>
               </div>
+
+              
+
 
               <a data-target="#carouselExampleControls" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -51,8 +52,17 @@
                 <span class="sr-only">Next</span>
               </a>
         </div>
+        <div class="helpText">
+          {{ product }} Click on image to view next episode.
         </div>
-      
+        <div class="manualIncBar">
+          <img class="floatLeft incControl" src="images/decSeason.png" alt="Previous Season" v-on:click="GotoPrevSeason" >
+          <img class="floatLeft incControl" src="images/decEpisode.png" alt="Previous Episode" v-on:click="GotoPrevEpisode">
+          <img class="floatRight incControl" src="images/incSeason.png" alt="Next Season" v-on:click="GotoNextSeason">
+          <img class="floatRight incControl" src="images/incEpisode.png" alt="Next Episode" v-on:click="GotoNextEpisode">
+        </div>
+       
+        </div>
 
         <div class="bottomLeft">Bottom Left</div>
         <div class="bottomRight">Bottom Right</div>
