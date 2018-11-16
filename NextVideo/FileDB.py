@@ -16,6 +16,7 @@ class FileDB:
         if dbROOT is None:
             self.dbROOT = self._getDefaultRoot()
         self.dbROOT = self._optSep(self.dbROOT) + "$$DATASTORE$$"
+        self._createPathIfNeeded(self.dbROOT)
     
     def storeJSON(self, relPath, obj):
         # Assuming obj is a dict
@@ -46,10 +47,13 @@ class FileDB:
         pathlib.Path(path).mkdir(parents=True, exist_ok=True) 
 
     def getSubKeys(self, relPath):
-        path = self._getDefaultRoot() + self._optSep(relPath)
-        onlyfiles = [os.path.join(relPath, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) == False ]
+        try:
+            path = self._getDefaultRoot() + self._optSep(relPath)
+            onlyfiles = [os.path.join(relPath, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) == False ]
 
-        return onlyfiles
+            return onlyfiles
+        except:
+            return []
 
     def getJSON(self, relPath):
         path = self._getDefaultRoot() + self._optSep(relPath)
