@@ -10,6 +10,7 @@ FLASK="python3 -m flask run --host=0.0.0"
 
 # Start the flask server in the background
 echo "Starting FLASK server - server for JSON API"
+# Thought that I may need to use nohup in front of server start commands - but it doesn't appear that I do
 ${FLASK}&
 FLASK_PID=$! 
 
