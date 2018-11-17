@@ -94,6 +94,7 @@ function HelperMeth() {
 // Helper function to hide some of the complexity of using fetch and promises
 // NOTE: Just using a single errorHandler for 2 promises here (to make it easier)
 function callJSON(url, responseHandler, errorHandler) {
+  url += getUserParam();
   fetch(url)
       .then(function(response) {
          // Your code for handling the data you get from the API
@@ -106,9 +107,12 @@ function getURL(relPath){
   //var base1 = "http://18.130.245.71:5000/"; //AWS Server
   var base1 = "http://ec2-18-130-245-71.eu-west-2.compute.amazonaws.com:5000"
   var base2 = "http://127.0.0.1:5000";
-  var base = base1;
-  //console.log("getURL: " + base + relPath);
+  var base = base2;
   return base + relPath;
+}
+
+function getUserParam(){
+  return "?UID=" + data.ProfileID;
 }
 
 function isActiveAux (index) { 
