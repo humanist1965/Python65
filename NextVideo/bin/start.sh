@@ -11,7 +11,7 @@ FLASK="python3 -m flask run --host=0.0.0"
 # Start the flask server in the background
 echo "Starting FLASK server - server for JSON API"
 ${FLASK}&
-FLASK_PID=$!
+FLASK_PID=$! 
 
 
 # Starting the web-server 
