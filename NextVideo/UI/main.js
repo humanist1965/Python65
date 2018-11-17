@@ -4,7 +4,8 @@
 var data = {
   product: "NextVideo App",
   isActive: isActiveAux,
-  seriesList: [1,2,3]
+  seriesList: [1,2,3],
+  ProfileID: "NONE"
 }
 
 var app = new Vue({
@@ -176,6 +177,7 @@ function init(){
 
   $("#topLeft").click(function() {
     refreshApp();
+    saveToLocalStorage("PROFILE_ID");
   });
 
   history.navigationMode = 'compatible';
@@ -196,29 +198,28 @@ jQuery(document).ready(function($){
     location.reload(true);
   });
 
+  console.log("Testing Local storage");
+  data.ProfileID = getFromLocalStorage("PROFILE_ID")
+  console.log(data.ProfileID);
   
+  saveToLocalStorage("PROFILE_ID", "Mark");
   
-  // The below simulates the behaviour I am getting on the Fire Stick
-  // Commenting this out (only for debugging if specific problem on Fire TV Stick browsers)
-  //window.onbeforeunload = function () {
-    // This function does nothing.  It won't spawn a confirmation dialog
-    // But it will ensure that the page is not cached by the browser.
-  //}
-  
-  // Was using the following as a kludge to detect that BACK button had been pressed on 
-  // Browsers that go back to a cached state (i.e. Amazon Fire stick browsers) and do not
-  // trigger any events (that I can find - sure there will be some but..)
-  //
-  // BUT I am abandoning this approach in favour of the setInterval kludge below
-  // var mmCount = 0;
-  // $(document).mousemove(function(){
-  //   DEBUG("Mouse move - " + mmCount);
-  //   console.log("Mouse move - " + mmCount++);
-  //   $(document).unbind('mousemove');
-  //   refreshApp();
-  //   //window.setTimeout(refreshApp, 1000);
-  // })
 })
+
+function saveToLocalStorage(key, dataObj) {
+  if (dataObj == null){
+    localStorage.removeItem(key);
+  }
+  else {
+    localStorage.setItem(key, dataObj);
+  }
+  
+}
+
+function getFromLocalStorage(key) {
+  return localStorage.getItem(key);
+}
+
 
 // Kludge to fix a problem on browsers whose back button take you to a cached original state of the page
 // If the page is a SPA/Ajax page and was changed then these changes will not be reflected.

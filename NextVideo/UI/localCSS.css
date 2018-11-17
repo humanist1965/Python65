@@ -49,8 +49,8 @@ body {
 
 } 
 .topRight {
+    background-color: transparent;
     position:fixed;
-    display:none; /* Turn this off */
     right:10px;
     top:10px;
 
