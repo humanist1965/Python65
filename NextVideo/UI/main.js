@@ -200,9 +200,15 @@ jQuery(document).ready(function($){
 
   console.log("Testing Local storage");
   data.ProfileID = getFromLocalStorage("PROFILE_ID")
+  if (data.ProfileID == null) {
+    // Set a Defauly profile else will loop
+    saveToLocalStorage("PROFILE_ID", "Guest");
+    // Jump to profile page
+    window.open("selectProfile.html","_self");
+  }
   console.log(data.ProfileID);
   
-  saveToLocalStorage("PROFILE_ID", "Mark");
+ 
   
 })
 
