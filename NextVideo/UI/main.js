@@ -180,6 +180,15 @@ function init(){
     saveToLocalStorage("PROFILE_ID");
   });
 
+  $(".profilePerson").click(function() {
+    console.log("Person Selected")
+    var person = $(this).text();
+    console.log(person);
+    saveToLocalStorage("PROFILE_ID", person);
+    data.ProfileID = person;
+    window.open("index.html","_self");
+  });
+
   history.navigationMode = 'compatible';
   $(document).ready(function(){
     //DEBUG("READY OR NOT. HERE I COME - Going Find you...");

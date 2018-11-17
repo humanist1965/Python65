@@ -42,6 +42,9 @@ body {
     height:100px;
 }
 
+.profilePerson {
+    cursor: pointer;
+}
 .topLeft {
     position:fixed;
     left:10px;
