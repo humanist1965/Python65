@@ -1,3 +1,3 @@
 #!/bin/bash
-kill -9 75229
-kill -9 75230
+kill -9 75492
+kill -9 75493
