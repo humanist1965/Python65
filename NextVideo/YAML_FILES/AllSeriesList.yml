@@ -30,3 +30,9 @@
   name: "Seinfeld"
   image: images/Seinfeld.jpg
   infoUrl: https://www.themoviedb.org/tv/1400-seinfeld/season/${S}/episode/${E}
+
+  - 
+  seriesID: SV 
+  name: "Silicon Valley"
+  image: images/siliconvalley.jpg
+  infoUrl: https://www.themoviedb.org/tv/60573-silicon-valley/season/${S}/episode/${E}
