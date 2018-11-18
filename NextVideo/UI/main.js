@@ -57,8 +57,19 @@ var app = new Vue({
         // Not sure why but I need to do a $forceUpdate() on the Vue App to get it to refresh properly
         function (data2){data.seriesList[currentSelectedCarouselIndex] = data2; app.$forceUpdate();},
         function (error){console.log("Server Error:" + error);},
-      );
-      
+      )
+    },
+
+    showInfo: function () {
+        console.log("showInfo");
+        series = data.seriesList[currentSelectedCarouselIndex];
+        currentSeasonNumber = series.currentSeasonNumber;
+        nextEpisodeNumber = series.nextEpisodeNumber;
+        urlTemplate = series.infoUrl;
+        showURL = urlTemplate.replace("${S}", currentSeasonNumber);
+        showURL = showURL.replace("${E}", nextEpisodeNumber);
+        // console.log(showURL);
+        window.open(showURL,"_self");
     },
 
     GotoNextEpisode: function (event=null, toPlayURL=null) {
@@ -107,7 +118,7 @@ function getURL(relPath){
   //var base1 = "http://18.130.245.71:5000/"; //AWS Server
   var base1 = "http://ec2-18-130-245-71.eu-west-2.compute.amazonaws.com:5000"
   var base2 = "http://127.0.0.1:5000";
-  var base = base1;
+  var base = base2;
   return base + relPath;
 }
 

@@ -44,9 +44,10 @@
                   <div v-for="(series, index) in seriesList" v-bind:class="isActive(index)" v-on:click="PlayNextEpisode(series)">
                     <img class="d-block w-100 playItCursor" src="images/image1.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block playItCursor">
-                            <h5>{{ series.name }}</h5>
+                      <h5>{{ series.name }}</h5>
                             <p>Next Episode - {{ series.currentSeasonNumber }}x{{ series.nextEpisodeNumber }}</p>
                             <p>Last Watched - {{ series.lastWatchedDate }} </p>
+                            
                     </div>
                     
                   </div>
@@ -72,6 +73,7 @@
           <img class="floatLeft incControl" src="images/decEpisode.png" alt="Previous Episode" v-on:click="GotoPrevEpisode">
           <img class="floatRight incControl" src="images/incSeason.png" alt="Next Season" v-on:click="GotoNextSeason">
           <img class="floatRight incControl" src="images/incEpisode.png" alt="Next Episode" v-on:click="GotoNextEpisode">
+          <img class="floatRight incControl" src="images/info.png" alt="Info" v-on:click="showInfo">      
         </div>
        
         </div>
