@@ -136,6 +136,11 @@ body {
 
 .playItCursor {
     cursor: progress;
+    display: block;
+    max-width:500px;
+    max-height:243px;
+    width: auto;
+    height: auto;
 }
 
 .row:last-child {
