@@ -83,6 +83,14 @@ def main():
     ns.createYAMLfromTVHOMEUrl("BigBang",2,"TVHOME_RAW/TBBT2.html")
     ns.createYAMLfromTVHOMEUrl("BigBang",3,"TVHOME_RAW/TBBT3.html")
     ns.createYAMLfromTVHOMEUrl("BigBang",4,"TVHOME_RAW/TBBT4.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",5,"TVHOME_RAW/TBBT5.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",6,"TVHOME_RAW/TBBT6.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",7,"TVHOME_RAW/TBBT7.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",8,"TVHOME_RAW/TBBT8.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",9,"TVHOME_RAW/TBBT9.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",10,"TVHOME_RAW/TBBT10.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",11,"TVHOME_RAW/TBBT11.html")
+    ns.createYAMLfromTVHOMEUrl("BigBang",12,"TVHOME_RAW/TBBT12.html")
     # print(ns._extractVideoLinks(str1))
 
 if __name__ == '__main__':
