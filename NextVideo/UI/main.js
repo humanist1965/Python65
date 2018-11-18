@@ -11,7 +11,17 @@ var data = {
 var app = new Vue({
   el:"#app",
   data: data,
+  
   methods: {
+    GetImage: function (series) {
+      console.log("get image called ");
+      imageURL = series.image;
+      if (imageURL == null){
+        imageURL =  "images/image1.jpg";
+      }
+      console.log(imageURL);
+      return imageURL;
+    },
     PlayNextEpisode: function () {
       series = data.seriesList[currentSelectedCarouselIndex];
       console.log("PlayNextEpisode for " + series.name);
@@ -118,7 +128,7 @@ function getURL(relPath){
   //var base1 = "http://18.130.245.71:5000/"; //AWS Server
   var base1 = "http://ec2-18-130-245-71.eu-west-2.compute.amazonaws.com:5000"
   var base2 = "http://127.0.0.1:5000";
-  var base = base1;
+  var base = base2;
   return base + relPath;
 }
 

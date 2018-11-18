@@ -42,7 +42,7 @@
 
               <div class="carousel-inner">
                   <div v-for="(series, index) in seriesList" v-bind:class="isActive(index)" v-on:click="PlayNextEpisode(series)">
-                    <img class="d-block w-100 playItCursor" src="images/image1.jpg" alt="First slide">
+                    <img class="d-block w-100 playItCursor" v-bind:src="GetImage(series)" alt="First slide">
                     <div class="carousel-caption d-none d-md-block playItCursor">
                       <h5>{{ series.name }}</h5>
                             <p>Next Episode - {{ series.currentSeasonNumber }}x{{ series.nextEpisodeNumber }}</p>
