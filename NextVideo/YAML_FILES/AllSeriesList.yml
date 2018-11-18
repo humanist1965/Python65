@@ -4,7 +4,7 @@
 -
   seriesID: GOT   # This is also used to attach to Season information *.yml files
   name: "Game of Thrones"
-  image: images/GOT.jpg
+  image: images/GOT2.jpg
   infoUrl: https://www.themoviedb.org/tv/1399-game-of-thrones/season/${S}/episode/${E}
 
 - 
