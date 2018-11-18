@@ -72,9 +72,12 @@ def main():
     ns = NewSeries()
     # ns.createYAMLfromTVHOMEUrl("WestWorld",1,"TVHOME_RAW/WestWorld1.html")
     # ns.createYAMLfromTVHOMEUrl("WestWorld",2,"TVHOME_RAW/WestWorld2.html")
-    ns.createYAMLfromTVHOMEUrl("GOT",5,"TVHOME_RAW/GOT5.html")
-    ns.createYAMLfromTVHOMEUrl("GOT",6,"TVHOME_RAW/GOT6.html")
-    ns.createYAMLfromTVHOMEUrl("GOT",7,"TVHOME_RAW/GOT7.html")
+    # ns.createYAMLfromTVHOMEUrl("GOT",5,"TVHOME_RAW/GOT5.html")
+    # ns.createYAMLfromTVHOMEUrl("GOT",6,"TVHOME_RAW/GOT6.html")
+    # ns.createYAMLfromTVHOMEUrl("GOT",7,"TVHOME_RAW/GOT7.html")
+    ns.createYAMLfromTVHOMEUrl("Billions",1,"TVHOME_RAW/Billions1.html")
+    ns.createYAMLfromTVHOMEUrl("Billions",2,"TVHOME_RAW/Billions2.html")
+    ns.createYAMLfromTVHOMEUrl("Billions",3,"TVHOME_RAW/Billions3.html")
     # print(ns._extractVideoLinks(str1))
 
 if __name__ == '__main__':
