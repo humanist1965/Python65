@@ -265,11 +265,12 @@ function getFromLocalStorage(key) {
 // If the page is a SPA/Ajax page and was changed then these changes will not be reflected.
 // To make the problem worse: I cannot find any events that are triggered after back button is pressed
 //
-// The kludge sets up a repeating timer that gets re-run in the situation above
+// The kludge sets up a repeating timer that gets re-run in the situation above 
+//
 var intCount = 0;
 var INTERVAL_TIMER = window.setInterval(function(){
   //DEBUG("Interval called: " + intCount++); 
-  window.setTimeout(refreshApp, 100);     // Watch out for this value (and corresponding one below). May be too quick for some browsers! Didin't work on MacOS desktop machine.
+  window.setTimeout(refreshApp, 1000);     // Watch out for this value (and corresponding one below). May be too quick for some browsers! Didin't work on MacOS desktop machine.
   window.clearInterval(INTERVAL_TIMER);
 }, 100);
 
