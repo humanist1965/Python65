@@ -53,6 +53,7 @@ body {
 } 
 .topRight {
     background-color: transparent;
+    opacity: 1.0;
     position:fixed;
     right:10px;
     top:10px;

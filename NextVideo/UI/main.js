@@ -14,12 +14,12 @@ var app = new Vue({
   
   methods: {
     GetImage: function (series) {
-      console.log("get image called ");
+      //console.log("get image called ");
       imageURL = series.image;
       if (imageURL == null){
         imageURL =  "images/image1.jpg";
       }
-      console.log(imageURL);
+      //console.log(imageURL);
       return imageURL;
     },
     PlayNextEpisode: function () {
@@ -128,7 +128,7 @@ function getURL(relPath){
   //var base1 = "http://18.130.245.71:5000/"; //AWS Server
   var base1 = "http://ec2-18-130-245-71.eu-west-2.compute.amazonaws.com:5000"
   var base2 = "http://127.0.0.1:5000";
-  var base = base1;
+  var base = base2;
   return base + relPath;
 }
 
@@ -211,7 +211,8 @@ function init(){
     console.log(person);
     saveToLocalStorage("PROFILE_ID", person);
     data.ProfileID = person;
-    window.open("index.html","_self");
+    // r=1 tells index.html this is a redirect and prevents it forcing a profile select again
+    window.open("index.html?r=1","_self");
   });
 
   history.navigationMode = 'compatible';
@@ -223,6 +224,7 @@ function init(){
   
 }
 
+
 jQuery(document).ready(function($){
   //DEBUG("JQuery Ready called");
 
@@ -232,17 +234,36 @@ jQuery(document).ready(function($){
     location.reload(true);
   });
 
-  console.log("Testing Local storage");
+  //console.log("Testing Local storage");
+  urlPath = String(window.location);
+  //console.log(urlPath);
+  // Next few lines determine whether this is the first time the App has been called
+  // When so force user to select a profile to use.
+  urlPath = urlPath.substr(urlPath.length - 10);
+  if (urlPath.indexOf(".html") == -1){
+    firstTime = true;
+  }
+  else {
+    firstTime = (urlPath == "index.html");
+  }
+  
   data.ProfileID = getFromLocalStorage("PROFILE_ID")
-  if (data.ProfileID == null) {
+  if ((data.ProfileID == null)||firstTime) {
     // Set a Defauly profile else will loop
-    saveToLocalStorage("PROFILE_ID", "Guest");
+    if (data.ProfileID == null) {
+      saveToLocalStorage("PROFILE_ID", "Guest");
+    }
+    
     // Jump to profile page
     window.open("selectProfile.html","_self");
   }
   console.log(data.ProfileID);
-  
- 
+
+  urlPath = String(window.location);
+  if (urlPath.indexOf("selectProfile.html") != -1){
+    console.log("Setting focus on Sharon");
+    $("#sharonProfile").focus();
+  }
   
 })
 
