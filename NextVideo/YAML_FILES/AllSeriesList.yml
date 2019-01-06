@@ -36,3 +36,9 @@
   name: "Silicon Valley"
   image: images/siliconvalley.jpg
   infoUrl: https://www.themoviedb.org/tv/60573-silicon-valley/season/${S}/episode/${E}
+
+- 
+  seriesID: GLEE 
+  name: "Glee"
+  image: images/glee.jpg
+  infoUrl: https://www.themoviedb.org/tv/1417-glee/season/${S}/episode/${E}
