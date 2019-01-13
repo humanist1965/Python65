@@ -42,3 +42,9 @@
   name: "Glee"
   image: images/glee.jpg
   infoUrl: https://www.themoviedb.org/tv/1417-glee/season/${S}/episode/${E}
+
+- 
+  seriesID: MANH 
+  name: "Manhattan"
+  image: images/manh.jpg
+  infoUrl: https://www.themoviedb.org/tv/61112-manhattan/season/${S}/episode/${E}
