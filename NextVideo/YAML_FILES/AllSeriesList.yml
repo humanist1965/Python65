@@ -49,7 +49,8 @@
   image: images/manh.jpg
   infoUrl: https://www.themoviedb.org/tv/61112-manhattan/season/${S}/episode/${E}
 
-seriesID: MRROBOT 
+-
+  seriesID: MRROBOT 
   name: "Mr Robot"
   image: images/mrrobot.jpg
   infoUrl: https://www.themoviedb.org/tv/62560-mr-robot/season/${S}/episode/${E}
