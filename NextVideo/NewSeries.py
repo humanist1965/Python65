@@ -119,8 +119,9 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("MANH",1,"TVHOME_RAW/manh1.html")
     # ns.createYAMLfromTVHOMEUrl("MANH",2,"TVHOME_RAW/manh2.html")
 
-    ns.createYAMLfromTVHOMEUrl("MRROBOT",2,"TVHOME_RAW/mrrobot2.html")
-    ns.createYAMLfromTVHOMEUrl("MRROBOT",3,"TVHOME_RAW/mrrobot3.html")
+    ns.createYAMLfromTVHOMEUrl("MRROBOT",1,"TVHOME_RAW/mrrobot1.html")
+    # ns.createYAMLfromTVHOMEUrl("MRROBOT",2,"TVHOME_RAW/mrrobot2.html")
+    # ns.createYAMLfromTVHOMEUrl("MRROBOT",3,"TVHOME_RAW/mrrobot3.html")
 
 if __name__ == '__main__':
     main()
