@@ -54,3 +54,9 @@
   name: "Mr Robot"
   image: images/mrrobot.jpg
   infoUrl: https://www.themoviedb.org/tv/62560-mr-robot/season/${S}/episode/${E}
+
+-
+  seriesID: WDEAD 
+  name: "Walking Dead"
+  image: images/wdead.jpg
+  infoUrl: https://www.themoviedb.org/tv/1402-the-walking-dead/season/${S}/episode/${E}

@@ -6,3 +6,4 @@ cd ~/AWS/KEYPAIRS
 ssh -i "MK_KEYPAIR1.pem" ubuntu@ec2-52-56-214-201.eu-west-2.compute.amazonaws.com
 
 
+
