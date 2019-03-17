@@ -61,7 +61,7 @@
   image: images/wdead.jpg
   infoUrl: https://www.themoviedb.org/tv/1402-the-walking-dead/season/${S}/episode/${E}
 
-  -
+-
   seriesID: DOWNA 
   name: "Downton Abbey"
   image: images/downa.jpg
