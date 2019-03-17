@@ -60,3 +60,9 @@
   name: "Walking Dead"
   image: images/wdead.jpg
   infoUrl: https://www.themoviedb.org/tv/1402-the-walking-dead/season/${S}/episode/${E}
+
+  -
+  seriesID: DOWNA 
+  name: "Downton Abbey"
+  image: images/downa.jpg
+  infoUrl: https://www.themoviedb.org/tv/33907-downton-abbey/season/${S}/episode/${E}
