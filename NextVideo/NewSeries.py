@@ -123,6 +123,14 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("MRROBOT",2,"TVHOME_RAW/mrrobot2.html")
     # ns.createYAMLfromTVHOMEUrl("MRROBOT",3,"TVHOME_RAW/mrrobot3.html")
 
+    ns.createYAMLfromTVHOMEUrl("WDEAD",1,"TVHOME_RAW/wdead1.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",2,"TVHOME_RAW/wdead2.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",3,"TVHOME_RAW/wdead3.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",4,"TVHOME_RAW/wdead4.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",5,"TVHOME_RAW/wdead5.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",6,"TVHOME_RAW/wdead6.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",7,"TVHOME_RAW/wdead7.html")
+    ns.createYAMLfromTVHOMEUrl("WDEAD",8,"TVHOME_RAW/wdead8.html")
     ns.createYAMLfromTVHOMEUrl("WDEAD",9,"TVHOME_RAW/wdead9.html")
 
 if __name__ == '__main__':
