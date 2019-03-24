@@ -140,7 +140,7 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("DOWNA",5,"TVHOME_RAW/downa5.html")
     # ns.createYAMLfromTVHOMEUrl("DOWNA",6,"TVHOME_RAW/downa6.html")
 
-    ns.createYAMLfromTVHOMEUrl("SUNNYP",1,"TVHOME_RAW/sunnyp1.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",1,"TVHOME_RAW/sunnyp1.html")
     # ns.createYAMLfromTVHOMEUrl("SUNNYP",2,"TVHOME_RAW/sunnyp2.html")
     # ns.createYAMLfromTVHOMEUrl("SUNNYP",3,"TVHOME_RAW/sunnyp3.html")
     # ns.createYAMLfromTVHOMEUrl("SUNNYP",4,"TVHOME_RAW/sunnyp4.html")
@@ -153,6 +153,12 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("SUNNYP",11,"TVHOME_RAW/sunnyp11.html")
     # ns.createYAMLfromTVHOMEUrl("SUNNYP",12,"TVHOME_RAW/sunnyp12.html")
     # ns.createYAMLfromTVHOMEUrl("SUNNYP",13,"TVHOME_RAW/sunnyp13.html")
+
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",1,"TVHOME_RAW/vikings1.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",2,"TVHOME_RAW/vikings2.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",3,"TVHOME_RAW/vikings3.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",4,"TVHOME_RAW/vikings4.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",5,"TVHOME_RAW/vikings5.html")
 
 if __name__ == '__main__':
     main()
