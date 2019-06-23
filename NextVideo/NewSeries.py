@@ -140,7 +140,29 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("DOWNA",5,"TVHOME_RAW/downa5.html")
     # ns.createYAMLfromTVHOMEUrl("DOWNA",6,"TVHOME_RAW/downa6.html")
 
+<<<<<<< HEAD
     ns.createYAMLfromTVHOMEUrl("LTOWER",1,"TVHOME_RAW/ltower1.html")
+=======
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",1,"TVHOME_RAW/sunnyp1.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",2,"TVHOME_RAW/sunnyp2.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",3,"TVHOME_RAW/sunnyp3.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",4,"TVHOME_RAW/sunnyp4.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",5,"TVHOME_RAW/sunnyp5.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",6,"TVHOME_RAW/sunnyp6.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",7,"TVHOME_RAW/sunnyp7.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",8,"TVHOME_RAW/sunnyp8.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",9,"TVHOME_RAW/sunnyp9.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",10,"TVHOME_RAW/sunnyp10.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",11,"TVHOME_RAW/sunnyp11.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",12,"TVHOME_RAW/sunnyp12.html")
+    # ns.createYAMLfromTVHOMEUrl("SUNNYP",13,"TVHOME_RAW/sunnyp13.html")
+
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",1,"TVHOME_RAW/vikings1.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",2,"TVHOME_RAW/vikings2.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",3,"TVHOME_RAW/vikings3.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",4,"TVHOME_RAW/vikings4.html")
+    ns.createYAMLfromTVHOMEUrl("VIKINGS",5,"TVHOME_RAW/vikings5.html")
+>>>>>>> f33ff0b662f8072c38380a4caf95c29728e59266
 
 if __name__ == '__main__':
     main()

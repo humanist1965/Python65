@@ -68,7 +68,20 @@
   infoUrl: https://www.themoviedb.org/tv/33907-downton-abbey/season/${S}/episode/${E}
 
 -
+<<<<<<< HEAD
   seriesID: LTOWER 
   name: "Looming Tower"
   image: images/ltower.jpg
   infoUrl: https://www.themoviedb.org/tv/70721-the-looming-tower/season/${S}/episode/${E}
+=======
+  seriesID: SUNNYP 
+  name: "It's Always Sunny in Philadephia"
+  image: images/sunnyp.jpg
+  infoUrl: https://www.themoviedb.org/tv/2710-it-s-always-sunny-in-philadelphia/season/${S}/episode/${E}
+
+-
+  seriesID: VIKINGS 
+  name: "Vikings"
+  image: images/vikings.jpg
+  infoUrl: https://www.themoviedb.org/tv/44217-vikings/season/${S}/episode/${E}
+>>>>>>> f33ff0b662f8072c38380a4caf95c29728e59266
