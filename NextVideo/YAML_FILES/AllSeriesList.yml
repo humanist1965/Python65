@@ -66,3 +66,9 @@
   name: "Downton Abbey"
   image: images/downa.jpg
   infoUrl: https://www.themoviedb.org/tv/33907-downton-abbey/season/${S}/episode/${E}
+
+-
+  seriesID: LTOWER 
+  name: "Looming Tower"
+  image: images/ltower.jpg
+  infoUrl: https://www.themoviedb.org/tv/70721-the-looming-tower/season/${S}/episode/${E}
