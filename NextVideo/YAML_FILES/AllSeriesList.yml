@@ -85,7 +85,7 @@
   image: images/vikings.jpg
   infoUrl: https://www.themoviedb.org/tv/44217-vikings/season/${S}/episode/${E}
 
-  -
+-
   seriesID: BLLIES 
   name: "Big Little Lies"
   image: images/bllies.jpg
