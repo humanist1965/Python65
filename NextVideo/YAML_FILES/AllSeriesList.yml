@@ -96,3 +96,9 @@
   name: "The Wire"
   image: images/wire.jpg
   infoUrl: https://www.themoviedb.org/tv/1438-the-wire/season/${S}/episode/${E}
+
+-
+  seriesID: CURB 
+  name: "Curb Your Enthusiasm"
+  image: images/curb.jpg
+  infoUrl: https://www.themoviedb.org/tv/4546-curb-your-enthusiasm/season/${S}/episode/${E}
