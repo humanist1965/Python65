@@ -145,7 +145,13 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("Billions",4,"TVHOME_RAW/Billions4.html")
 
     # ns.createYAMLfromTVHOMEUrl("BLLIES",1,"TVHOME_RAW/bllies1.html")
-    ns.createYAMLfromTVHOMEUrl("BLLIES",2,"TVHOME_RAW/bllies2.html")
+    # ns.createYAMLfromTVHOMEUrl("BLLIES",2,"TVHOME_RAW/bllies2.html")
+
+    ns.createYAMLfromTVHOMEUrl("WIRE",1,"TVHOME_RAW/wire1.html")
+    ns.createYAMLfromTVHOMEUrl("WIRE",2,"TVHOME_RAW/wire2.html")
+    ns.createYAMLfromTVHOMEUrl("WIRE",3,"TVHOME_RAW/wire3.html")
+    ns.createYAMLfromTVHOMEUrl("WIRE",4,"TVHOME_RAW/wire4.html")
+    ns.createYAMLfromTVHOMEUrl("WIRE",5,"TVHOME_RAW/wire5.html")
 
 if __name__ == '__main__':
     main()

@@ -90,3 +90,9 @@
   name: "Big Little Lies"
   image: images/bllies.jpg
   infoUrl: https://www.themoviedb.org/tv/66292-big-little-lies/season/${S}/episode/${E}
+
+-
+  seriesID: WIRE 
+  name: "The Wire"
+  image: images/wire.jpg
+  infoUrl: https://www.themoviedb.org/tv/1438-the-wire/season/${S}/episode/${E}
