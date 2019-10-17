@@ -102,3 +102,9 @@
   name: "Curb Your Enthusiasm"
   image: images/curb.jpg
   infoUrl: https://www.themoviedb.org/tv/4546-curb-your-enthusiasm/season/${S}/episode/${E}
+
+-
+  seriesID: BORG 
+  name: "Borgias"
+  image: images/borgias.jpg
+  infoUrl: https://www.themoviedb.org/tv/33025-the-borgias/season/${S}/episode/${E}

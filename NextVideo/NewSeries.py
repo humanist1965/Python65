@@ -153,15 +153,19 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("WIRE",4,"TVHOME_RAW/wire4.html")
     # ns.createYAMLfromTVHOMEUrl("WIRE",5,"TVHOME_RAW/wire5.html")
 
-    ns.createYAMLfromTVHOMEUrl("CURB",1,"TVHOME_RAW/curb1.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",2,"TVHOME_RAW/curb2.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",3,"TVHOME_RAW/curb3.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",4,"TVHOME_RAW/curb4.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",5,"TVHOME_RAW/curb5.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",6,"TVHOME_RAW/curb6.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",7,"TVHOME_RAW/curb7.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",8,"TVHOME_RAW/curb8.html")
-    ns.createYAMLfromTVHOMEUrl("CURB",9,"TVHOME_RAW/curb9.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",1,"TVHOME_RAW/curb1.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",2,"TVHOME_RAW/curb2.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",3,"TVHOME_RAW/curb3.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",4,"TVHOME_RAW/curb4.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",5,"TVHOME_RAW/curb5.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",6,"TVHOME_RAW/curb6.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",7,"TVHOME_RAW/curb7.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",8,"TVHOME_RAW/curb8.html")
+    # ns.createYAMLfromTVHOMEUrl("CURB",9,"TVHOME_RAW/curb9.html")
+
+    ns.createYAMLfromTVHOMEUrl("BORG",1,"TVHOME_RAW/borg1.html")
+    ns.createYAMLfromTVHOMEUrl("BORG",2,"TVHOME_RAW/borg2.html")
+    ns.createYAMLfromTVHOMEUrl("BORG",3,"TVHOME_RAW/borg3.html")
 
 if __name__ == '__main__':
     main()
