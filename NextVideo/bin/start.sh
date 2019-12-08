@@ -3,6 +3,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd ${DIR}/..
+echo "STARTUP DIR = ${DIR}"
 
 # Start the flask server
 # host=0.0.0 needed to allow access from any source IP
