@@ -100,11 +100,11 @@ class FileDB:
         if self._rootDBExists():
             return self.dbROOT
         else:
-            # print("Getting Default DB Root Path")
-            # print('sys.argv[0] =', sys.argv[0])             
+            print("Getting Default DB Root Path")
+            print('sys.argv[0] =', sys.argv[0])             
             pathname = os.path.dirname(sys.argv[0])     
-            # print('path =', pathname)
-            # print('full path =', os.path.abspath(pathname)) 
+            print('path =', pathname)
+            print('full path =', os.path.abspath(pathname)) 
             pathname = os.path.abspath(pathname)
             
             return pathname 
