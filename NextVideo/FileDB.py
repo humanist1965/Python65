@@ -14,7 +14,8 @@ class FileDB:
     def __init__(self, dbROOT=None):
         """Constructor"""
         if dbROOT is None:
-            self.dbROOT = self._getDefaultRoot()
+            # self.dbROOT = self._getDefaultRoot()
+            self.dbROOT = "/home/ubuntu/Python65/NextVideo"
         self.dbROOT = self._optSep(self.dbROOT) + "$$DATASTORE$$"
         self._createPathIfNeeded(self.dbROOT)
     
