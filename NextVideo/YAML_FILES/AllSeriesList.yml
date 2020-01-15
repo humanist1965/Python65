@@ -98,7 +98,7 @@
   infoUrl: https://www.themoviedb.org/tv/1438-the-wire/season/${S}/episode/${E}
 
 -
-  seriesID: CURB 
+  seriesID: CURB
   name: "Curb Your Enthusiasm"
   image: images/curb.jpg
   infoUrl: https://www.themoviedb.org/tv/4546-curb-your-enthusiasm/season/${S}/episode/${E}
@@ -111,6 +111,6 @@
 
 -
   seriesID: MMM 
-  name: "The Marvelous Mrs Maisel"
+  name: "The Marvelous Mrs Maisel "
   image: images/mmm.jpg
   infoUrl: https://www.themoviedb.org/tv/70796-the-marvelous-mrs-maisel/season/${S}/episode/${E}
