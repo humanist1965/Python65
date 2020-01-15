@@ -166,7 +166,11 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("BORG",1,"TVHOME_RAW/borg1.html")
     # ns.createYAMLfromTVHOMEUrl("BORG",2,"TVHOME_RAW/borg2.html")
     # ns.createYAMLfromTVHOMEUrl("BORG",3,"TVHOME_RAW/borg3.html")
-    ns.createYAMLfromTVHOMEUrl("VIKINGS",5,"TVHOME_RAW/Vikings5.html")
+    # ns.createYAMLfromTVHOMEUrl("VIKINGS",5,"TVHOME_RAW/Vikings5.html")
+
+    ns.createYAMLfromTVHOMEUrl("MMM",1,"TVHOME_RAW/MMM1.html")
+    ns.createYAMLfromTVHOMEUrl("MMM",2,"TVHOME_RAW/MMM2.html")
+    ns.createYAMLfromTVHOMEUrl("MMM",3,"TVHOME_RAW/MMM3.html")
 
 if __name__ == '__main__':
     main()
