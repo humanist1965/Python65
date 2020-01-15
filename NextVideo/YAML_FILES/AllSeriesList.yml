@@ -108,3 +108,9 @@
   name: "Borgias"
   image: images/borgias.jpg
   infoUrl: https://www.themoviedb.org/tv/33025-the-borgias/season/${S}/episode/${E}
+
+-
+  seriesID: MMM 
+  name: "The Marvelous Mrs Maisel"
+  image: images/mmm.jpg
+  infoUrl: https://www.themoviedb.org/tv/70796-the-marvelous-mrs-maisel/season/${S}/episode/${E}
