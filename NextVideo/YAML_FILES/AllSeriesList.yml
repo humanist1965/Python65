@@ -108,3 +108,9 @@
   name: "Borgias"
   image: images/borgias.jpg
   infoUrl: https://www.themoviedb.org/tv/33025-the-borgias/season/${S}/episode/${E}
+
+-
+  seriesID: SEXAC 
+  name: "Sex and the City"
+  image: images/sexac.jpg
+  infoUrl: https://www.themoviedb.org/tv/105-sex-and-the-city/season/${S}/episode/${E}
