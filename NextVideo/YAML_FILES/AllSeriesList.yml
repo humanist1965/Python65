@@ -126,3 +126,10 @@
   name: "The Sopranos"
   image: images/sopranos.jpg
   infoUrl: https://www.themoviedb.org/tv/1398-the-sopranos/season/${S}/episode/${E}
+
+-  
+  seriesID: BOARDW 
+  name: "Boardwalk Empire"
+  image: images/boardw.jpg
+  infoUrl: https://www.themoviedb.org/tv/1621-boardwalk-empire/season/${S}/episode/${E}
+
