@@ -133,3 +133,8 @@
   image: images/boardw.jpg
   infoUrl: https://www.themoviedb.org/tv/1621-boardwalk-empire/season/${S}/episode/${E}
 
+-  
+  seriesID: AUFW 
+  name: "Auf Wiedersehen Pet"
+  image: images/AUFW.jpg
+  infoUrl: https://www.themoviedb.org/tv/4628-auf-wiedersehen-pet/season/${S}/episode/${E}
