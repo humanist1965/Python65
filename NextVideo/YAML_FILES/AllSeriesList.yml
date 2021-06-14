@@ -138,3 +138,9 @@
   name: "Auf Wiedersehen Pet"
   image: images/AUFW.jpg
   infoUrl: https://www.themoviedb.org/tv/4628-auf-wiedersehen-pet/season/${S}/episode/${E}
+
+-  
+  seriesID: UNDO 
+  name: "Undoing"
+  image: images/undo.jpg
+  infoUrl: https://www.themoviedb.org/tv/83851-the-undoing/season/${S}/episode/${E}
