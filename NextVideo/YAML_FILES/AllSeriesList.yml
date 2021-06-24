@@ -144,3 +144,9 @@
   name: "Undoing"
   image: images/undo.jpg
   infoUrl: https://www.themoviedb.org/tv/83851-the-undoing/season/${S}/episode/${E}
+
+-  
+  seriesID: MARE 
+  name: "Mare of Easttown"
+  image: images/mare.jpg
+  infoUrl: https://www.themoviedb.org/tv/115004-mare-of-easttown/season/${S}/episode/${E}

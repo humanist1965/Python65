@@ -187,7 +187,10 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("BOARDW",3,"TVHOME_RAW/boardw3.html")
     # ns.createYAMLfromTVHOMEUrl("BOARDW",4,"TVHOME_RAW/boardw4.html")
     # ns.createYAMLfromTVHOMEUrl("BOARDW",5,"TVHOME_RAW/boardw5.html")
-    ns.createYAMLfromTVHOMEUrl("UNDO",1,"TVHOME_RAW/undo1.html")
+
+    # ns.createYAMLfromTVHOMEUrl("UNDO",1,"TVHOME_RAW/undo1.html")
+
+    ns.createYAMLfromTVHOMEUrl("MARE",1,"TVHOME_RAW/mare1.html")
     
 
 if __name__ == '__main__':
