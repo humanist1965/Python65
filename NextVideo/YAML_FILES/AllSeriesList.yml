@@ -150,3 +150,9 @@
   name: "Mare of Easttown"
   image: images/mare.jpg
   infoUrl: https://www.themoviedb.org/tv/115004-mare-of-easttown/season/${S}/episode/${E}
+
+-  
+  seriesID: WHITEC 
+  name: "Whitechapel"
+  image: images/whitec.jpg
+  infoUrl: https://www.themoviedb.org/tv/17450-whitechapel/season/${S}/episode/${E}
