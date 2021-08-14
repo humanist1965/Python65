@@ -156,3 +156,9 @@
   name: "Whitechapel"
   image: images/whitec.jpg
   infoUrl: https://www.themoviedb.org/tv/17450-whitechapel/season/${S}/episode/${E}
+
+-  
+  seriesID: VINYL 
+  name: "Vinyl"
+  image: images/vinyl.jpg
+  infoUrl: https://www.themoviedb.org/tv/63535-vinyl/season/${S}/episode/${E}
