@@ -199,6 +199,9 @@ def main():
 
     # ns.createYAMLfromTVHOMEUrl("VINYL",1,"TVHOME_RAW/vinyl1.html")
 
+    ns.createYAMLfromTVHOMEUrl("FARGO",1,"TVHOME_RAW/fargo1.html")
+    ns.createYAMLfromTVHOMEUrl("FARGO",2,"TVHOME_RAW/fargo2.html")
+    ns.createYAMLfromTVHOMEUrl("FARGO",3,"TVHOME_RAW/fargo3.html")
     ns.createYAMLfromTVHOMEUrl("FARGO",4,"TVHOME_RAW/fargo4.html")
     
 
