@@ -197,7 +197,9 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("WHITEC",3,"TVHOME_RAW/whitec3.html")
     # ns.createYAMLfromTVHOMEUrl("WHITEC",4,"TVHOME_RAW/whitec4.html")
 
-    ns.createYAMLfromTVHOMEUrl("VINYL",1,"TVHOME_RAW/vinyl1.html")
+    # ns.createYAMLfromTVHOMEUrl("VINYL",1,"TVHOME_RAW/vinyl1.html")
+
+    ns.createYAMLfromTVHOMEUrl("FARGO",4,"TVHOME_RAW/fargo4.html")
     
 
 if __name__ == '__main__':

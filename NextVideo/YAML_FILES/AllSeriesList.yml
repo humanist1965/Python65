@@ -162,3 +162,10 @@
   name: "Vinyl"
   image: images/vinyl.jpg
   infoUrl: https://www.themoviedb.org/tv/63535-vinyl/season/${S}/episode/${E}
+
+
+-  
+  seriesID: FARGO 
+  name: "Fargo"
+  image: images/fargo.jpg
+  infoUrl: https://www.themoviedb.org/tv/60622-fargo/season/${S}/episode/${E}
