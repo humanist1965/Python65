@@ -170,7 +170,7 @@
   image: images/fargo.jpg
   infoUrl: https://www.themoviedb.org/tv/60622-fargo/season/${S}/episode/${E}
 
-  -  
+-  
   seriesID: FOUNDATION 
   name: "Foundation"
   image: images/foundation.jpg
