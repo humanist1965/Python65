@@ -209,14 +209,14 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("FARGO",3,"TVHOME_RAW/fargo3.html")
     # ns.createYAMLfromTVHOMEUrl("FARGO",4,"TVHOME_RAW/fargo4.html")
 
-    # ns.createYAMLfromTVHOMEUrl("FOUNDATION",1,"TVHOME_RAW/foundation1.html")
+    ns.createYAMLfromTVHOMEUrl("FOUNDATION",1,"TVHOME_RAW/foundation1.html")
 
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",1,"TVHOME_RAW/theamericans1.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",2,"TVHOME_RAW/theamericans2.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",3,"TVHOME_RAW/theamericans3.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",4,"TVHOME_RAW/theamericans4.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",5,"TVHOME_RAW/theamericans5.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",6,"TVHOME_RAW/theamericans6.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",1,"TVHOME_RAW/theamericans1.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",2,"TVHOME_RAW/theamericans2.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",3,"TVHOME_RAW/theamericans3.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",4,"TVHOME_RAW/theamericans4.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",5,"TVHOME_RAW/theamericans5.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",6,"TVHOME_RAW/theamericans6.html")
 
 if __name__ == '__main__':
     main()
