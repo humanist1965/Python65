@@ -175,3 +175,9 @@
   name: "Foundation"
   image: images/foundation.jpg
   infoUrl: https://www.themoviedb.org/tv/93740-foundation/season/${S}/episode/${E}
+
+-  
+  seriesID: THEAMERICANS 
+  name: "The Americans"
+  image: images/theamericans.jpg
+  infoUrl: https://www.themoviedb.org/tv/46533-the-americans/season/${S}/episode/${E}
