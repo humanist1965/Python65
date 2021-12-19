@@ -15,6 +15,8 @@ class NewSeries:
             urlData = _getStrFromFile(url)
 
         episodeList = self._extractVideoLinks(urlData)
+        print("Debug problem")
+        print(episodeList)
         str_list = ["---\n"]
         for i, ep in enumerate(episodeList): 
             str_list.append("-\n")
@@ -32,7 +34,10 @@ class NewSeries:
             modIt = it[6:]
             modIt = modIt[:-1]
             modIt = "http://tvhome.cc" + modIt
-            urlPathList.append(modIt)
+            if modIt.endswith("|1"):
+                modIt = modIt[0:len(modIt)-2]
+            if not modIt.endswith("|2"):
+                urlPathList.append(modIt)
         return urlPathList[::-1]
    
     def _saveToYAMLFile(self, seriesID, seasonNum, outStr):
@@ -207,11 +212,11 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("FOUNDATION",1,"TVHOME_RAW/foundation1.html")
 
     ns.createYAMLfromTVHOMEUrl("THEAMERICANS",1,"TVHOME_RAW/theamericans1.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",2,"TVHOME_RAW/theamericans2.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",3,"TVHOME_RAW/theamericans3.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",4,"TVHOME_RAW/theamericans4.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",5,"TVHOME_RAW/theamericans5.html")
-    ns.createYAMLfromTVHOMEUrl("THEAMERICANS",6,"TVHOME_RAW/theamericans6.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",2,"TVHOME_RAW/theamericans2.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",3,"TVHOME_RAW/theamericans3.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",4,"TVHOME_RAW/theamericans4.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",5,"TVHOME_RAW/theamericans5.html")
+    # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",6,"TVHOME_RAW/theamericans6.html")
 
 if __name__ == '__main__':
     main()
