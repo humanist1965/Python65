@@ -1,5 +1,5 @@
-// Only visible in ProfileDev branch
 import Vue from 'vue'
+// Only visible in ProfileDev branch
 
 // local datastore for the App
 var data = {
