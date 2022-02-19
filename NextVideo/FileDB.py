@@ -66,7 +66,7 @@ class FileDB:
     
     def getObj(self, relPath):
         jsonStr = self.getJSON(relPath)
-        dictRet = yaml.load(jsonStr)
+        dictRet = yaml.load(jsonStr, Loader=yaml.FullLoader)
         return dictRet
 
     def getYAML(self, relFilePath):
@@ -74,7 +74,7 @@ class FileDB:
         path = self._getYAMLRoot() + self._optSep(relFilePath, False)
         with open(path, 'r') as fp:
             try:
-                dictRet = yaml.load(fp)
+                dictRet = yaml.load(fp, Loader=yaml.FullLoader)
                 return dictRet
             except yaml.YAMLError as exc:
                 print(exc)
