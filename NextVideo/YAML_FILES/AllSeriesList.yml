@@ -181,3 +181,9 @@
   name: "The Americans"
   image: images/theamericans.jpg
   infoUrl: https://www.themoviedb.org/tv/46533-the-americans/season/${S}/episode/${E}
+
+-  
+  seriesID: SUCCESS 
+  name: "Succession"
+  image: images/success.jpeg
+  infoUrl: https://www.themoviedb.org/tv/76331-succession/season/${S}/episode/${E}
