@@ -220,7 +220,10 @@ def main():
 
     # ns.createYAMLfromTVHOMEUrl("SUCCESS",1,"TVHOME_RAW/success1.html")
 
-    ns.createYAMLfromTVHOMEUrl("MANCASTLE",1,"TVHOME_RAW/mancastle1.html")
+    # ns.createYAMLfromTVHOMEUrl("MANCASTLE",1,"TVHOME_RAW/mancastle1.html")
+    ns.createYAMLfromTVHOMEUrl("MANCASTLE",2,"TVHOME_RAW/mancastle2.html")
+    ns.createYAMLfromTVHOMEUrl("MANCASTLE",3,"TVHOME_RAW/mancastle3.html")
+    ns.createYAMLfromTVHOMEUrl("MANCASTLE",4,"TVHOME_RAW/mancastle4.html")
 
 if __name__ == '__main__':
     main()
