@@ -79,7 +79,7 @@ var app = new Vue({
         urlTemplate = series.infoUrl;
         showURL = urlTemplate.replace("${S}", currentSeasonNumber);
         showURL = showURL.replace("${E}", nextEpisodeNumber);
-        // console.log(showURL);
+        console.log(showURL);
         window.open(showURL,"_self");
     },
 
