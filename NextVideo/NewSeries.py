@@ -218,7 +218,9 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",5,"TVHOME_RAW/theamericans5.html")
     # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",6,"TVHOME_RAW/theamericans6.html")
 
-    ns.createYAMLfromTVHOMEUrl("SUCCESS",1,"TVHOME_RAW/success1.html")
+    # ns.createYAMLfromTVHOMEUrl("SUCCESS",1,"TVHOME_RAW/success1.html")
+
+    ns.createYAMLfromTVHOMEUrl("MANCASTLE",1,"TVHOME_RAW/mancastle1.html")
 
 if __name__ == '__main__':
     main()

@@ -187,3 +187,9 @@
   name: "Succession"
   image: images/success.jpeg
   infoUrl: https://www.themoviedb.org/tv/76331-succession/season/${S}/episode/${E}
+
+-  
+  seriesID: MANCASTLE 
+  name: "The Man In The High Castle"
+  image: images/mancastle.jpg
+  infoUrl: hhttps://www.themoviedb.org/tv/62017-the-man-in-the-high-castle/season/${S}/episode/${E}
