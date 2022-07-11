@@ -193,3 +193,10 @@
   name: "The Man In The High Castle"
   image: images/mancastle.jpg
   infoUrl: https://www.themoviedb.org/tv/62017-the-man-in-the-high-castle/season/${S}/episode/${E}
+
+-  
+  seriesID: THICKOFIT  
+  name: "The Thick Of It"
+  image: images/thickofit.jpg
+  infoUrl: https://www.themoviedb.org/tv/4507-the-thick-of-it/season/${S}/episode/${E}
+

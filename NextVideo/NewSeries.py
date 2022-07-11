@@ -226,5 +226,10 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("MANCASTLE",3,"TVHOME_RAW/mancastle3.html")
     # ns.createYAMLfromTVHOMEUrl("MANCASTLE",4,"TVHOME_RAW/mancastle4.html")
 
+    ns.createYAMLfromTVHOMEUrl("THICKOFIT",1,"TVHOME_RAW/thickofit1.html")
+    ns.createYAMLfromTVHOMEUrl("THICKOFIT",2,"TVHOME_RAW/thickofit2.html")
+    ns.createYAMLfromTVHOMEUrl("THICKOFIT",3,"TVHOME_RAW/thickofit3.html")
+    ns.createYAMLfromTVHOMEUrl("THICKOFIT",4,"TVHOME_RAW/thickofit4.html")
+
 if __name__ == '__main__':
     main()
