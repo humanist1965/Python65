@@ -200,3 +200,10 @@
   image: images/thickofit.jpg
   infoUrl: https://www.themoviedb.org/tv/4507-the-thick-of-it/season/${S}/episode/${E}
 
+-  
+  seriesID: AGOD  
+  name: "American Gods"
+  image: images/agod.jpg
+  infoUrl: https://www.themoviedb.org/tv/46639-american-gods/season/${S}/episode/${E}
+
+
