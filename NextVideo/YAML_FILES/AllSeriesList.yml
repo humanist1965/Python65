@@ -206,4 +206,11 @@
   image: images/agod.jpg
   infoUrl: https://www.themoviedb.org/tv/46639-american-gods/season/${S}/episode/${E}
 
+-  
+  seriesID: DEVILS  
+  name: "Devils"
+  image: images/devils.jpeg
+  infoUrl: https://www.themoviedb.org/tv/99741-devils/season/${S}/episode/${E}
+
+
 
