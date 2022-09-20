@@ -220,6 +220,8 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("THEAMERICANS",6,"TVHOME_RAW/theamericans6.html")
 
     # ns.createYAMLfromTVHOMEUrl("SUCCESS",1,"TVHOME_RAW/success1.html")
+    ns.createYAMLfromTVHOMEUrl("SUCCESS",2,"TVHOME_RAW/success2.html")
+    ns.createYAMLfromTVHOMEUrl("SUCCESS",3,"TVHOME_RAW/success3.html")
 
     # ns.createYAMLfromTVHOMEUrl("MANCASTLE",1,"TVHOME_RAW/mancastle1.html")
     # ns.createYAMLfromTVHOMEUrl("MANCASTLE",2,"TVHOME_RAW/mancastle2.html")
@@ -235,8 +237,8 @@ def main():
     # ns.createYAMLfromTVHOMEUrl("AGOD",2,"TVHOME_RAW/agod2.html")
     # ns.createYAMLfromTVHOMEUrl("AGOD",3,"TVHOME_RAW/agod3.html")
 
-    ns.createYAMLfromTVHOMEUrl("DEVILS",1,"TVHOME_RAW/devils1.html")
-    ns.createYAMLfromTVHOMEUrl("DEVILS",2,"TVHOME_RAW/devils2.html")
+    # ns.createYAMLfromTVHOMEUrl("DEVILS",1,"TVHOME_RAW/devils1.html")
+    # ns.createYAMLfromTVHOMEUrl("DEVILS",2,"TVHOME_RAW/devils2.html")
     
 
 if __name__ == '__main__':
