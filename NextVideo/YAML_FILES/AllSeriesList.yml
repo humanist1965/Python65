@@ -215,7 +215,8 @@
 -  
   seriesID: HOD  
   name: "House Of Dragons"
-  image: images/hod.jpeg
+  image: images/hod.jpg
   infoUrl: https://www.themoviedb.org/tv/94997-house-of-the-dragon/season/${S}/episode/${E}
+
 
 
