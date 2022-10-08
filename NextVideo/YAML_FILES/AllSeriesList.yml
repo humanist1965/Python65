@@ -212,5 +212,10 @@
   image: images/devils.jpeg
   infoUrl: https://www.themoviedb.org/tv/99741-devils/season/${S}/episode/${E}
 
+-  
+  seriesID: HOD  
+  name: "House Of Dragons"
+  image: images/hod.jpeg
+  infoUrl: https://www.themoviedb.org/tv/94997-house-of-the-dragon/season/${S}/episode/${E}
 
 
